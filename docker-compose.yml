@@ -1,0 +1,10 @@
+version: "2.0"
+services:
+  webmap:
+    build: ./MapBoxViewer
+    ports: 
+      - 8083:8080
+    environment:
+      - MAPBOX_API_KEY=pk.eyJ1IjoibWl0aHJhbmRpcjgzIiwiYSI6ImNqMmZ6OWMzdTAwNnkzM250eWM4Z2gyODMifQ.HT1Snbmjm_3SD0QRruj-Ug
+    volumes:
+      - ./MapBoxViewer/webmap:/usr/src/app/webmap

@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #2dc4b2;
+}
+
+#console {
+  position: absolute;
+  width: 240px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.session {
+  margin-bottom: 20px;
+}
+
+.row {
+  height: 12px;
+  width: 100%;
+}
+
+.pollution-colors {
+  background: linear-gradient(to right, #1a9641, #a6d96a, #f7f79a, #fdae61, #d7191c);
+  margin-bottom: 5px;
+}
+
+.traffic-colors {
+  background: linear-gradient(to right, #ffffff, #ffbfbf, #ff8080, #ff4040, #ff0000);
+  margin-bottom: 5px;
+}
+
+.label {
+  width: 18%;
+  display: inline-block;
+  text-align: center;
+}

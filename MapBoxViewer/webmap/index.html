@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<meta charset="UTF-8">
+
+<head>
+    <title>DEMO MAPBOX</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+    <link href="./style/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="map" style="height: 100%"></div>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- MAPBOX -->
+    <script>mapboxgl.accessToken = "{{ mapboxApiKey }}";</script>
+
+    <div id='console'>
+      <h1>Tráfico vs NO2 (mg/m3)</h1>
+      <p>Comparación de densidad de tráfico frente a la polución</a> en Madrid, Noviembre 2018</p>
+
+      <div class='session'>
+        <h2>Niveles NO2</h2>
+        <div class='row pollution-colors'>
+        </div>
+        <div class='row labels'>
+          <div class='label'>0</div>
+          <div class='label'>25</div>
+          <div class='label'>60</div>
+          <div class='label'>100</div>
+          <div class='label'>150+</div>
+        </div>
+      </div>
+
+
+      <div class='session'>
+        <h2>Tráfico (vehículos/hora)</h2>
+        <div class='row traffic-colors'>
+        </div>
+        <div class='row labels'>
+          <div class='label'>0</div>
+          <div class='label'>1.5k</div>
+          <div class='label'>3.5k</div>
+          <div class='label'>7.5k</div>
+          <div class='label'>15k+</div>
+        </div>
+      </div>
+
+      <!-- <div class='session' id='daySliderbar'>
+        <h2>Dia: <label id='active-day'>1</label> de Noviembre de 2018</h2>
+        <input id='daySlider' class='row' type='range' min='1' max='7' step='1' value='1' />
+      </div> -->
+
+      <div class='session' id='hourSliderbar'>
+        <h2>Hora: <label id='active-hour'>9:00</label></h2>
+        <input id='hourSlider' class='row' type='range' min='0' max='23' step='1' value='9' />
+      </div>
+
+    </div>
+
+    <!-- LOCAL RESOURCES -->
+    <script type="text/javascript" src="js/map.js"></script>
+
+</body>
+</html>

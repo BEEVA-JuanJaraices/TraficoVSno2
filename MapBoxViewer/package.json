@@ -1,0 +1,15 @@
+{
+  "name": "webmap_trafico",
+  "version": "1.0.0",
+  "description": "WebMap Tráfico", 
+  "author": "Juan Jaraices <juanalberto.jaraices.next@bbva.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.3",
+    "http-proxy": "^1.11.1"
+  }
+}
